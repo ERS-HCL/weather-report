@@ -32,6 +32,7 @@ of a user through IP address and display the weather report. .
 <app-weather [userCity]="cityName" (getWeatherReport)="getWeatherJson($event)" ></app-weather>
 ```
 
+
 ## @Output Decorator
 
 @Output decorator will give complete weather details of a city in the form of json object.
@@ -39,10 +40,51 @@ of a user through IP address and display the weather report. .
 json object consist of weather details like Temperature,Pressure,humidity and wind etc.
 
 ```typescript
- getWeatherReport = new EventEmitter();
- getWeatherJson(event){
+ getWeatherJson(weatherdata:WeatherInfo){
     console.log("parent")
-    console.log(event);
+    console.log(weatherdata.error);
   }
   ```
+  
+  weatherInfo data is output of type WeatherInfo interface
+  ## WeatherInfo
 
+```typescript
+export interface WeatherInfo {
+  main:MainInfo;
+  wind:WindInfo;
+  weather:Weather;
+  dt:DateInfo;
+  error:ErrorInfo;
+}
+
+```
+Main interface WeatherInfo contains sub interfaces to get whole Weather information from json
+
+### MainInfo
+ MainInfo interface used to get weather information like temperature,pressure,humidity
+```typescript
+export interface MainInfo {
+    temp:number;
+    pressure:number;
+    humidity:number;
+}
+
+```
+### WindInfo
+ WindInfo interface used to get weather information like windSpeed
+ ```typescript
+export interface WindInfo {
+    speed:number;
+  deg:number; 
+}
+```
+
+### Weather
+ Weather interface used to get weather information like  weather description
+ ```typescript
+export interface Weather {
+    description:string;
+}
+
+ ```
