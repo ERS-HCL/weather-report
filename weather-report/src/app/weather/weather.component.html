@@ -1,0 +1,43 @@
+<div class="ReportWrap">
+    <div class="container1">
+        <div class="row">
+            <div class="loc text-info text-center ">{{someData|titlecase }}</div>
+            <div class="icon">
+                <img class='status' src="{{src}}" height="80px" style="float:left;">
+            </div>
+            
+            <h3 class="text-center" id='temp' style="margin-left: -15px;">{{temp}}
+                <sup>o</sup>c</h3>
+            <br>
+            <h3 class="climate">{{description |titlecase }}</h3>
+            <br>
+            <div class="buttons">
+                <button class="search btn btn-info" (click)="displaySearch($event)">Choose City</button>
+                <button class="more btn btn-info" (click)="displayMore($event)">More</button>
+            </div>
+        </div>
+    </div>
+    <div class="search1" [class.change]="change">
+        <input type="text" [(ngModel)]="city">
+        <button (click)="getWeather($event)" class="btn btn-success text-center rounded" >search</button>
+        <div class="error">{{ErrorMessage}}</div>
+    </div>
+
+    <div class="morewrap" [class.moreChange]="moreChange">
+        <div>
+            <span>Wind</span>
+            <span class="sp1">{{wind}} Km/Hr</span>
+            <img src="assets/icons/moreIcons/windIcon.png">
+        </div>
+        <div>
+            <span>Humidity</span>
+            <span class="sp1">{{humidity}} %</span>
+            <img src="assets/icons/moreIcons/humidityIcon.jpg">
+        </div>
+        <div class="imgcontainer">
+            <span>Pressure</span>
+            <span class="sp1">{{pressure}} Mb</span>
+            <img src="assets/icons/moreIcons/pressureIcon.png">
+        </div>
+    </div>
+</div>

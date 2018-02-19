@@ -1,0 +1,163 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.ReportWrap{
+    width: 250px;
+    margin:  30px auto;
+}
+.container1{
+    background-color:white;
+    border:10px solid cornflowerblue;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+.row .icon img{
+    margin-top: 20px;
+   margin-left: 40px;
+   height:60px;
+   float:left;
+}
+.row #temp{
+    margin-right: -10px;
+    margin-top:50px;
+}
+.search1{
+    background-color:cornflowerblue;
+    padding: 6px;
+    display:none;
+    box-shadow: 5px 5px 5px #aaaaaa;
+}
+.search1 button{
+    width: 80px;
+    height: 30px;
+    border-radius:10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.search1 input{
+  width: 150px;
+}
+.morewrap{
+    background-color:cornflowerblue;
+    display:none;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    
+}
+.morewrap div{
+    padding: 5px;
+    color: white;
+}
+.morewrap span{
+    padding: 10px;
+}
+.loc{
+    font-size: 30px;
+}
+
+.row h1{
+    font-size: 40px; 
+    margin-left: 240px;
+    margin-top: 60px; 
+}
+.search,.more{
+    width: 150px;
+}
+.search{
+   padding: 5px;
+   border-radius:15px; 
+   
+}
+.more{
+    border-radius:15px; 
+}
+.icon{
+    flex: 1 40%;
+    margin-left:-15px;
+}
+.temp{
+    /* flex:1 50%; */
+    float: left;
+}
+.climate{
+    text-align: center;
+    margin: 10px;
+}
+.status{
+    float: left;
+}
+.change{
+    display: block;
+}
+.moreChange{
+    display:block;
+}
+.morewrap img{
+    width:50px;
+    height: 50px;
+}
+.error{
+    color:white;
+    font-size: 16px;
+    margin: 20px;
+}
+.buttons button{
+    width: 100px;
+    height: 40px;
+    float:left;
+    margin: 0 7px 5px
+    
+   
+}
+.search,.more{
+    margin: 26px;
+}
+.search1 input{
+    border: 1px soild grey;
+    border-radius: 5px;
+    text-align: center;
+
+}
+ /*  @media only screen and (max-width: 320px) {
+    .ReportWrap{
+        width:100%;
+    }
+   #temp{
+     font-size: 20px;
+   }
+    .row #temp{
+        margin-right: 5px;
+        
+    }
+    .row .icon img{
+        margin-top: 10px;
+       margin-left: 30px;
+    }
+    .search1 input{
+        margin: 10px;
+        width: 90%;
+        border-radius: 5px;
+        border: 2px solid grey;
+        text-align: center;
+        line-height: 20px;
+    }
+    .search1 button{
+        margin:20px 50px 30px 50px;
+    }
+    .error{
+        margin: 0px 10px 50px 10px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .buttons button{
+        width: 80%;
+        margin-left: 15px;
+    }
+    .morewrap span{
+        padding: 15px;
+    }
+    .morewrap img{
+        margin-left: 5px;
+    }
+} */
