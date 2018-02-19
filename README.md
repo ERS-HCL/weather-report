@@ -3,7 +3,7 @@
 Weather report is a simple component developed by using angular and bootstrap Which will give the weather report
 for the given location Ex: Pune.
 
-<p align="center"><img src="\demo-img\weatherReport-3.png"></p>
+<p align="center"><img src="\demo-img\weather-report-1.png"></p>
 
 ## Using the complete angular project
 Download the weather report and install the required packages and run the application
