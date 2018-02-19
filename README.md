@@ -5,6 +5,11 @@ for the given location Ex: Pune.
 
 <p align="center"><img src="\demo-img\weather-report-1.png"></p>
 
+### Note :
+when user pass the city name as input user get weather info of that respective city using Http request ,but in stackbliz http module doesnt work , for demo purpose i have taken some static data to view the component through below link.
+
+To preview demo of to Weather report project,[click here](https://stackblitz.com/edit/angular-twn1j8-3luvqp?embed=1&file=src/app/app.component.html&hideNavigation=1&view=preview)
+
 ## Using the complete angular project
 Download the weather report and install the required packages and run the application
 
@@ -76,7 +81,7 @@ export interface MainInfo {
  ```typescript
 export interface WindInfo {
     speed:number;
-  deg:number; 
+    deg:number; 
 }
 ```
 
