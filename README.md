@@ -46,7 +46,7 @@ json object consist of weather details like Temperature,Pressure,humidity and wi
   }
   ```
   
-  weatherInfo data is output of type WeatherInfo interface
+  weatherdata is output of type WeatherInfo interface
   ## WeatherInfo
 
 ```typescript
